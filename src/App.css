@@ -1,38 +1,36 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.FormPreviewContainer {
+  display: flex; /* Use flex display */
+  gap: 20px; /* Add some gap between the two components */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.formContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.formContainer label {
+  margin-bottom: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formContainer input {
+  margin-bottom: 8px;
+}
+
+.formDataContainer {
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+.formDataContainer p {
+  margin-top: 0px;
+  margin-bottom: 6px;
+}
+
+.formDataContainer :nth-child(odd) {
+  margin-bottom: 10px;
 }
